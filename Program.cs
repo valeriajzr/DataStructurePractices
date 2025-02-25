@@ -50,7 +50,10 @@ Burbuja burbuja = new Burbuja();
 
 //burbuja.algBurbuja([7, 29, 86, -20]);
 
-Seleccion seleccion = new Seleccion();
-seleccion.algSeleccion([2, 1, 5, 0, 4, 3, 7, 8, -1, 2, 4]);
+//Seleccion seleccion = new Seleccion();
+//seleccion.algSeleccion([2, 1, 5, 0, 4, 3, 7, 8, -1, 2, 4]);
+
+Insercion insercion = new Insercion();
+insercion.algInsercion([2, 1, 5, 0, 4, 3, 7, 8, -1, 2, 4]);
 
 

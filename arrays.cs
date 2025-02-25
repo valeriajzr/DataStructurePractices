@@ -131,7 +131,37 @@ namespace algoritmos
                 arr[i] = arr[elemento];
                 arr[elemento] = temporal;
             }
-            Console.WriteLine("Algoritmo de ordenamiento - Seleccion: ");
+            Console.WriteLine("Final array");
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
+        }
+    }
+
+    //This class implements Insertion sorting Algorithm
+    internal class Insercion
+    {
+        public void algInsercion(int[] arr)
+        {
+            for(int i = 1; i < arr.Length; i++)
+            {
+                int aux = arr[i];
+                for(int x = i; x > 0; x--)
+                {
+                    int anterior = x - 1;
+                    if(arr[anterior] > aux)
+                    {
+                        while (arr[anterior] > aux)
+                        {
+                            arr[anterior + 1] = arr[anterior];
+                            break;
+                        }
+                        arr[anterior] = aux;
+                    }
+                }
+            }
+            Console.WriteLine("Final array: ");
             for (int i = 0; i < arr.Length; i++)
             {
                 Console.WriteLine(arr[i]);
