@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,6 +75,8 @@ namespace algoritmos
     {
         public void algBurbuja(int[] arr)
         {
+            Stopwatch sw = new Stopwatch(); // Creación del Stopwatch.
+            sw.Start();
             bool intercambio;
             int aux = 0;
             for (int o = arr.Length; o > 0; o--)
@@ -97,18 +100,10 @@ namespace algoritmos
                 {
                     break;
                 }
-                Console.WriteLine("Nuevo array: ");
-                for (int i = 0; i < arr.Length; i++)
-                {
-
-                    Console.WriteLine(arr[i]);
-                }
+                
             }
-            Console.WriteLine("Array final: ");
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Console.WriteLine(arr[i]);
-            }
+            sw.Stop(); // Detener la medición.
+            Console.WriteLine("Time elapsed Bubble: {0} ticks", sw.ElapsedTicks); // Mostrar el tiempo transcurriodo con un formato hh:mm:ss.000
         }
     }
     //This class implements Selection sorting Algrithm
@@ -116,6 +111,8 @@ namespace algoritmos
     {
         public void algSeleccion(int[] arr)
         {
+            Stopwatch sw = new Stopwatch(); // Creación del Stopwatch.
+            sw.Start();
             for (int i = 0; i < arr.Length; i++)
             {
                 int elemento = i;
@@ -131,11 +128,8 @@ namespace algoritmos
                 arr[i] = arr[elemento];
                 arr[elemento] = temporal;
             }
-            Console.WriteLine("Final array");
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Console.WriteLine(arr[i]);
-            }
+            sw.Stop(); // Detener la medición.
+            Console.WriteLine("Time elapsed Selection: {0} ticks", sw.ElapsedTicks); // Mostrar el tiempo transcurriodo con un formato hh:mm:ss.000
         }
     }
 
@@ -144,7 +138,9 @@ namespace algoritmos
     {
         public void algInsercion(int[] arr)
         {
-            for(int i = 1; i < arr.Length; i++)
+            Stopwatch sw = new Stopwatch(); // Creación del Stopwatch.
+            sw.Start();
+            for (int i = 1; i < arr.Length; i++)
             {
                 int aux = arr[i];
                 for(int x = i; x > 0; x--)
@@ -161,11 +157,34 @@ namespace algoritmos
                     }
                 }
             }
-            Console.WriteLine("Final array: ");
+            sw.Stop(); // Detener la medición.
+            Console.WriteLine("Time elapsed Insertion: {0} ticks", sw.ElapsedTicks); // Mostrar el tiempo transcurriodo con un formato hh:mm:ss.000
+        }
+    }
+
+    //This class implements another sorting Algorithm
+    internal class anotherAlgorithm
+    {
+        public void algAnother(int[] arr)
+        {
+            Stopwatch sw = new Stopwatch(); // Creación del Stopwatch.
+            sw.Start();
             for (int i = 0; i < arr.Length; i++)
             {
-                Console.WriteLine(arr[i]);
+                int aux = 0;
+                for(int x = arr.Length - 1; x > i; x--)
+                {
+                    if (arr[i] > arr[x])
+                    {
+                        aux = arr[x];
+                        arr[x] = arr[i];
+                        arr[i] = aux;
+                    }
+                }
             }
+            sw.Stop(); // Detener la medición.
+            Console.WriteLine("Time elapsed Another: {0} ticks", sw.ElapsedTicks); // Mostrar el tiempo transcurriodo con un formato hh:mm:ss.000
+
         }
     }
 }

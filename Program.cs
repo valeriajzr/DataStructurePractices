@@ -35,8 +35,8 @@ Console.WriteLine("7 es un numero cool: " + numeroCool.cool(7));
 Console.WriteLine("8 es un numero cool: " + numeroCool.cool(8));
 */
 
-//Empieza seccion de arrays
-using algoritmos;
+/*Empieza seccion de arrays
+
 arrays arreglo = new arrays();
 arreglo.nombre();
 palindromo palindromo = new palindromo();
@@ -45,15 +45,19 @@ Console.WriteLine("somosonosomos es un palindromo: " + palindromo.palin("somoson
 calcularMinMaxAVG calcularMinMaxAVG = new calcularMinMaxAVG();
 calcularMinMaxAVG.minMaxAVG([2.5, 2.3, 7.1, 7.5, 6.8]);
 calcularMinMaxAVG.minMaxAVG([10.2, 2.3, 3.9, 1.2, 6.8]);
+*/
+using algoritmos;
 Burbuja burbuja = new Burbuja();
-//burbuja.algBurbuja([2, 1, 5, 0, 4, 3, 7, 8, -1, 2, 4]);
+burbuja.algBurbuja([2, 1, 5, 0, 4, 3, 7, 8, -1, 2, 4, 100, 349, -8, 567, -1, 0, -20, 34, 5, 98, 24, 97, 96, 95, 0, 6, 10]);
 
-//burbuja.algBurbuja([7, 29, 86, -20]);
 
-//Seleccion seleccion = new Seleccion();
-//seleccion.algSeleccion([2, 1, 5, 0, 4, 3, 7, 8, -1, 2, 4]);
+Seleccion seleccion = new Seleccion();
+seleccion.algSeleccion([2, 1, 5, 0, 4, 3, 7, 8, -1, 2, 4, 100, 349, -8, 567, -1, 0, -20, 34, 5, 98, 24, 97, 96, 95, 0, 6, 10]);
 
 Insercion insercion = new Insercion();
-insercion.algInsercion([2, 1, 5, 0, 4, 3, 7, 8, -1, 2, 4]);
+insercion.algInsercion([2, 1, 5, 0, 4, 3, 7, 8, -1, 2, 4, 100, 349, -8, 567, -1, 0, -20, 34, 5, 98, 24, 97, 96, 95, 0, 6, 10]);
+
+anotherAlgorithm anotherAlgorithm = new anotherAlgorithm();
+anotherAlgorithm.algAnother([2, 1, 5, 0, 4, 3, 7, 8, -1, 2, 4, 100, 349, -8, 567, -1, 0, -20, 34, 5, 98, 24, 97, 96, 95, 0, 6, 10]);
 
 
