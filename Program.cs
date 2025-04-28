@@ -1,4 +1,5 @@
-﻿/*Esta seccion es lo inicial del curso hasta el video 17. Son las operaciones basicas y algoritmos con numeros
+﻿using algoritmos;
+/*Esta seccion es lo inicial del curso hasta el video 17. Son las operaciones basicas y algoritmos con numeros
  * using algoritmos;
 
 multiplicar mult = new multiplicar();
@@ -45,7 +46,7 @@ Console.WriteLine("somosonosomos es un palindromo: " + palindromo.palin("somoson
 calcularMinMaxAVG calcularMinMaxAVG = new calcularMinMaxAVG();
 calcularMinMaxAVG.minMaxAVG([2.5, 2.3, 7.1, 7.5, 6.8]);
 calcularMinMaxAVG.minMaxAVG([10.2, 2.3, 3.9, 1.2, 6.8]);
-*/
+
 using algoritmos;
 Burbuja burbuja = new Burbuja();
 burbuja.algBurbuja([2, 1, 5, 0, 4, 3, 7, 8, -1, 2, 4, 100, 349, -8, 567, -1, 0, -20, 34, 5, 98, 24, 97, 96, 95, 0, 6, 10]);
@@ -59,5 +60,31 @@ insercion.algInsercion([2, 1, 5, 0, 4, 3, 7, 8, -1, 2, 4, 100, 349, -8, 567, -1,
 
 anotherAlgorithm anotherAlgorithm = new anotherAlgorithm();
 anotherAlgorithm.algAnother([2, 1, 5, 0, 4, 3, 7, 8, -1, 2, 4, 100, 349, -8, 567, -1, 0, -20, 34, 5, 98, 24, 97, 96, 95, 0, 6, 10]);
+*/
+
+//Recursion recursion = new Recursion();
+//recursion.countDown(10);
+
+//FactorialWithRecursion factorial = new FactorialWithRecursion();
+//Console.WriteLine("Factorial de 5: " + factorial.calculateFactorial(5));
+
+//TorresHanoi torresHanoi = new TorresHanoi();
+//torresHanoi.hanoi(3, 1, 3, 2);
 
 
+//Matrix matrix = new Matrix();
+//matrix.matrices();
+
+/*MatrixA matrixA = new MatrixA();
+matrixA.matricesA();
+MatrixB matrixB = new MatrixB();
+matrixB.matricesB();*/
+
+//MatrixC matrixC = new MatrixC();
+//matrixC.matricesC();
+
+//JaggedArray jaggedArray = new JaggedArray();
+//jaggedArray.jagged();
+
+Scheduler scheduler = new Scheduler();
+scheduler.months();

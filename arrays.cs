@@ -158,7 +158,7 @@ namespace algoritmos
                 }
             }
             sw.Stop(); // Detener la medición.
-            Console.WriteLine("Time elapsed Insertion: {0} ticks", sw.ElapsedTicks); // Mostrar el tiempo transcurriodo con un formato hh:mm:ss.000
+            Console.WriteLine("Time elapsed Insertion: {0} ticks", sw.ElapsedTicks); // Mostrar el tiempo transcurrido con un formato hh:mm:ss.000
         }
     }
 
@@ -183,7 +183,7 @@ namespace algoritmos
                 }
             }
             sw.Stop(); // Detener la medición.
-            Console.WriteLine("Time elapsed Another: {0} ticks", sw.ElapsedTicks); // Mostrar el tiempo transcurriodo con un formato hh:mm:ss.000
+            Console.WriteLine("Time elapsed Another: {0} ticks", sw.ElapsedTicks); // Mostrar el tiempo transcurrido con un formato hh:mm:ss.000
 
         }
     }
